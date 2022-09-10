@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Manrope", "Tahoma", "Open-Sans", "Verdana" sans-serif;
+  font-family: "Tahoma", "Open-Sans", "Verdana", sans-serif;
   background-color: black;
 }
 
@@ -11,15 +11,12 @@ p {
   margin: 0;
 }
 h3 {
-  font-family: "Manrope";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
   line-height: 32px;
 }
 
 p {
-  font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -28,14 +25,13 @@ p {
 
 h1 {
   text-align: center;
-  font-family: "Manrope";
   color: white;
-  font-size: 48px;
-  margin-bottom: 80px;
+  margin-bottom: 48px;
 }
 
 a {
   text-decoration: none;
+  color: #8c30f5;
 }
 .services {
   padding: 80px;
@@ -85,6 +81,7 @@ button {
   border: 1px solid #ffffff;
   border-radius: 8px;
   flex: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1440px) {
@@ -97,8 +94,20 @@ button {
     justify-content: space-evenly;
   }
 }
+@media screen and (max-width: 1209px) {
+  .services-flex {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 845px) {
+  .services-flex_item {
+    width: 300px;
+  }
+}ß
 @media screen and (max-width: 768px) {
-  /* OK */
+  .services-flex_item {
+    width: 286px;
+  }
 }
 @media screen and (max-width: 425px) {
   h1 {
