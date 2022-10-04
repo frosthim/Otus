@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: "Nunito", "Tahoma", sans-serif;
+  background-color: #e5e5e5;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 90px;
+  width: 1150px;
+  height: 83px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 14.06%,
+    rgba(255, 255, 255, 0.8) 85.42%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(111px);
+}
+.header2 {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: #485466;
+}
+.item-one {
+  margin-top: 141px;
+}
+.item-one h1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 70px;
+  background: linear-gradient(112.77deg, #c381db 0%, #4e92f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.col-6 {
+  display: flex;
+}
+
+.item-one h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 55px;
+  color: #485466;
+}
+.item-one h3 {
+  margin-top: 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #5a6980;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+  background: linear-gradient(112.77deg, #c381db 0%, #4e92f9 100%);
+  box-sizing: border-box;
+  padding: 7px 16px;
+  border-radius: 8px;
+  margin-top: 56px;
+  cursor: pointer;
+  border: 0;
+}
+.button-1 {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 7px 16px;
+  gap: 10px;
+  box-shadow: 0px 7px 20px rgba(49, 69, 255, 0.13);
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(112.77deg, #c381db 0%, #4e92f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.img-fluid {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    width: 708px;
+    gap: 56px;
+  }
+  .header2 {
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header2 {
+    width: 315px;
+  }
+
+  .header img {
+    width: 69px;
+  }
+  .col-6 {
+    padding: 0;
+  }
+  .img-fluid {
+    width: 360px;
+    height: 596px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header {
+    backdrop-filter: blur(0px);
+  }
+  .row {
+    flex-wrap: nowrap;
+  }
+}
