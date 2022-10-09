@@ -77,5 +77,8 @@
         <button>Explore all →</button>
       </div>
     </section>
+      <footer style="color:aliceblue; text-align: center">
+        <?php echo date('Y-m-d H:i:s')?>
+      </footer>
   </body>
 </html>
